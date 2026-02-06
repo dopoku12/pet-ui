@@ -20,7 +20,7 @@
       </div>
     </div>
     <header class="border-b border-[#676767] bg-[#003B6D]">
-      <div class="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3">
+      <div class="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-3 px-4 py-3">
         <a class="flex items-center gap-3" href="index.html">
           <img class="h-10 w-10 rounded-xl bg-white p-1 object-contain" src="img/logo.png" alt="Paradigm Pet Professionals logo" />
           <div>
@@ -28,13 +28,25 @@
             <div class="text-sm text-white/80">Contact</div>
           </div>
         </a>
-        <nav class="flex flex-wrap gap-1 text-sm text-white/90">
+        <nav class="flex flex-wrap items-center gap-1 text-sm text-white/90">
           <a class="rounded-lg px-3 py-2 hover:bg-[#6699CC]" href="index.html">Home</a>
           <a class="rounded-lg px-3 py-2 hover:bg-[#6699CC]" href="dogs.html">Dogs</a>
           <a class="rounded-lg px-3 py-2 hover:bg-[#6699CC]" href="cat.html">Cat</a>
           <a class="rounded-lg px-3 py-2 hover:bg-[#6699CC]" href="small-animals.html">Small-Animals</a>
           <a class="rounded-lg px-3 py-2 hover:bg-[#6699CC]" href="faq.html">FAQ</a>
           <a class="rounded-lg bg-white/10 px-3 py-2" href="contact.html">Contact</a>
+          <form class="ml-1 flex items-center gap-2 rounded-lg bg-white/10 px-2 py-1" role="search" action="search.html" method="get">
+            <label class="sr-only" for="nav-q">Search</label>
+            <input
+              class="w-36 bg-transparent px-1 py-1 text-white placeholder-white/60 outline-none sm:w-44"
+              id="nav-q"
+              name="q"
+              type="search"
+              placeholder="Search…"
+              autocomplete="off"
+            />
+            <button class="rounded-md bg-white/15 px-2 py-1 text-white hover:bg-[#6699CC]" type="submit">Go</button>
+          </form>
         </nav>
       </div>
     </header>
